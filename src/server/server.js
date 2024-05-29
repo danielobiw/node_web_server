@@ -1,7 +1,12 @@
-const express = require('express');
-const path = require('path');
 
-const startServer = (options) => {
+//FORMA DE IMPORT ANTERIOR PARA VER LA DIFERENCIA DESPUES DE MIGRAR WEB SERVER A ES6
+//const express = require('express');
+//const path = require('path');
+import express from 'express';
+import path from 'path';
+
+//const startServer = (options) => {
+export const startServer = (options) => {
     const { port, public_path = 'public' } = options;
     //console.log(port);
     //console.log(public_path);
@@ -22,8 +27,9 @@ const startServer = (options) => {
     })
 }
 
-module.exports = {
-    startServer
-}
+//FORMA DE IMPORT ANTERIOR PARA VER LA DIFERENCIA DESPUES DE MIGRAR WEB SERVER A ES6
+// module.exports = {
+//     startServer
+// }
 
 

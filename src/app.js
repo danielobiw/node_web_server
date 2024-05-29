@@ -1,7 +1,11 @@
 //console.log('Hola desde app.js');
 
-const { envs } = require('./config/env')
-const { startServer } = require('./server/server')
+//FORMA DE IMPORT ANTERIOR PARA VER LA DIFERENCIA DESPUES DE MIGRAR WEB SERVER A ES6
+//const { envs } = require('./config/env')
+//const { startServer } = require('./server/server')
+import { envs } from './config/env.js'
+import { startServer } from './server/server.js'
+
 
 const main = () => {
     //console.log(envs)
